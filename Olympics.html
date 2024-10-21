@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olympic Chronicles</title>
+        <style>
+            body {
+                background-color: #c3adf5;
+            }
+            header {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background-color: inherit;
+            }
+
+            header img {
+                height: 80px;
+                margin-right: 20px;
+            }
+
+            .nav-buttons {
+                margin-left: auto;
+            }
+
+            .tablinks {
+                background-color: inherit;
+                border: none;
+                padding: 14px 16px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+
+            .tablinks:hover {
+                background-color: #c49b75;
+            }
+
+            .tabcontent {
+                display: none;
+                padding: 20px;
+            }
+
+            .image-text h1, .image-text p {
+                color: white;
+                font-size: 22px;
+            }
+
+            .overlay-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+            .image-container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+
+            #Home img {
+                width: 100%;
+                height: auto;
+            }
+            .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            animation: fadeIn 5s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .content-text {
+            padding: 20px;
+            font-size: 22px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/2024_Summer_Olympics_logo.svg" alt="Paris Logo">
+            <div class="nav-buttons">
+                <strong><button onclick="openTab(event, 'Home')" class="tablinks" id="defaultOpen">Home</button></strong>
+                <strong><button onclick="openTab(event, 'Venue')" class="tablinks">Venue</button></strong>
+                <strong><button onclick="openTab(event, 'Medal Table')" class="tablinks">Medal Table</button></strong>
+                <strong><button onclick="openTab(event, 'Games')" class="tablinks">Games</button></strong>
+            </div>
+        </header>
+
+        <div id="Home" class="tabcontent" style="display: block;">
+            <div class="image-container">
+                <img src="https://i.ytimg.com/vi/LsG1i6txqCo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLADr_vvH7Pc9uFtY7r2fqSpqeDg7Q" alt="Olympic Image">
+                <div class="overlay-text"> <h2>Paris 2024</h2><br>
+                    <p><b>Welcome to Olympic Chronicles</b></p></div>
+            </div>
+            <p style="margin-bottom: 20px; font-size: 22px;">
+                The 2024 Summer Olympics, known as Paris 2024, took place from July 26 to August 11 in France. Around 10,714 athletes from 204 nations, including the Athletes’ Independent Neutral (AIN) and Olympic Refugee (EOR) teams, participated. The opening ceremony at Stade de France highlighted French culture. New sports like breakdancing debuted. Athletes competed in 329 events across 33 sports, with many record-breaking performances. France finished in the top five of the medal tally. The closing ceremony celebrated athletic achievements and international unity, emphasizing sustainability and innovation.
+            </p>
+            <ul style="padding: 0; list-style: none;">
+                <li style="font-size: 22px; margin-bottom: 15px;">
+                    <b>New Sports</b>: Breaking (breakdancing) made its Olympic debut, adding a fresh and dynamic element to the Games.
+                </li>
+                <li style="font-size: 22px; margin-bottom: 15px;">
+                    <b>Sustainability Initiatives</b>: Paris 2024 aimed to be the greenest Olympics ever, focusing on existing venues and renewable energy.
+                </li>
+                <li style="font-size: 22px; margin-bottom: 15px;">
+                    <b>Emissions Reduction</b>: Organizers aimed to cut the carbon footprint by 50% compared to previous Games.
+                </li>
+                <li style="font-size: 22px; margin-bottom: 15px;">
+                    <b>Venue Utilization</b>: 95% of venues were existing or temporary, minimizing environmental impact.
+                </li>
+                <li style="font-size: 22px; margin-bottom: 15px;">
+                    <b>Renewable Energy</b>: All venues were powered by renewable sources, ensuring a low carbon footprint.
+                </li>
+            </ul>
+            <h1 style="font-weight: bold;">Why it is unique?</h1>
+      <ul style="padding: 0; list-style: none;">
+        <li style="font-size: 22px; margin-bottom: 15px;"><b>Global Participation: </b>The Olympics bring together athletes from over 200 countries, making it one of the most inclusive and diverse sporting events in the world. This global participation fosters a sense of unity and international camaraderie.</li>
+        <li style="font-size: 22px; margin-bottom: 15px;"><b>Variety of Sports:</b> The Games feature a wide range of sports, from traditional events like  and swimming to newer additions like skateboarding and breaking (breakdancing). This variety ensures there is something for everyone to enjoy</li>
+        <li style="font-size: 22px; margin-bottom: 15px;"><b>Cultural Exchange:</b> The Olympics serve as a melting pot of cultures, where athletes and spectators from different bacrounds come together, share their traditions, and learn from each other. This cultural exchange promotes mutual understanding and respect.</li>
+        <li style="font-size: 22px; margin-bottom: 15px;"><b>Historical Significance:</b> The Olympics have a rich history that dates back to ancient Greece, making them a symbol of enduring human achievement and tradition. The modern Games continue this legacy, celebrating both athletic excellence and historical continuity.</li>
+        <li style="font-size: 22px; margin-bottom: 15px;"><b>Promotion of Peace and Unity:</b> The Olympics are more than just a sporting event; they are a platform for promoting peace, solidarity, and fair play on a global scale. The Olympic Village, where athletes live together during the Games, exemplifies this spirit of unity in diversity.</li>
+      </ul>
+
+        </div>
+        <div id="Venue" class="tabcontent">
+            <div style="display: flex; align-items: flex-start; width: 100%;">
+                <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Paris_and_inner_ring.svg" alt="Map" style="width: 45%;">
+                <div style="margin-left: 20px;">
+                  <p style="font-size: 20px;">The Paris 2024 Olympic Games will showcase a variety of iconic venues, blending historic landmarks with modern sports facilities. The Stade de France will host athletics and rugby, while the Champs-Élysées and Place de la Concorde will be the site for road cycling and other ouspanoor events. The Eiffel Tower will serve as a backdrop for beach volleyball, enhancing the city's charm. Tennis will take place at the famous Roland Garros Stadium, and swimming will be held at the newly built Aquatics Centre. These venues highlight Paris’s rich cultural heritage and innovative infrastructure for a spectacular global event.</p>
+                </div>
+                <br>
+                <br>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/e7p7mb2pxtmxw5izfcii" alt="Aquatics Centre" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Aquatics Centre</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/bx20ndrnvlssfiocnw6e" alt="Bercy Arena" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Bercy Arena</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/fhcucnyfcn7x5vy3bwtl" alt="Bordeaux Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Bordeaux Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/i70myvzy7xdcvzix0qpt" alt="Champ de Mars Arena" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Champ de Mars Arena</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/y7xlwlk8nfvpia9jlitq" alt="Château de Versailles" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Château de Versailles</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/xoflwl1l38n9vebazxnf" alt="Chateauroux  Centre" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Chateauroux  Centre</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/zu53q5kn1qo1ijg2dupc" alt="Eiffel Tower Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Eiffel Tower Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/kvjyrwovjuwzrg4cz4h9" alt="Elancourt Hill" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Elancourt Hill</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/hd99ljofaoyqxd4xhpjj" alt="Geoffroy-Guichard Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Geoffroy-Guichard Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/kvjyrwovjuwzrg4cz4h9" alt="Grand Palais" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Grand Palais</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZ_XFP9W_Te9tN7DAWxOJWsV8tK8oGTzYSw&s" alt="Hôtel de Ville" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Hôtel de Ville</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/vsoxjhgouhfczq9ks4av" alt="Invalides" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Invalides</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/t4mmbub6yed1nkdy7ili" alt="La Beaujoire Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>La Beaujoire Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/dkysx7e06ynhwfb3v0w9" alt="La Concorde" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>La Concorde</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/yxea1ra5ucjisw6k8ccn" alt="Le Bourget Sport Climbing Venue" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Le Bourget Sport Climbing Venue</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_social_share_thumb/f_auto/primary/aq7kowcwlmh8nqp8z8zr" alt="Golf National" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Golf National</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/beekk7tvfg9hzosbxccr" alt="Lyon Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Lyon Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/a3dg9k4vqcvfwltczrxn" alt="Marseille Marina" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Marseille Marina</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/ziotfeuhilbeeh6amsal" alt="Marseille Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Marseille Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/gkdqkzamz08sdohss8uw" alt="Nice Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Nice Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/ueupjchxueao6ta0a8jn" alt="North Paris Arena" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>North Paris Arena</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/xxi7qpjhwhh1tqewooib" alt="Parc des Princes" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Parc des Princes</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/gdipnj8m9xgxekrvnck8" alt="Pierre Mauroy Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Pierre Mauroy Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/yhjrtevgfd8fac6blbau" alt="Pont Alexandre III" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Pont Alexandre III</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/dhkind8lbuoz8rsmg6u8" alt="Porte de La Chapelle Arena" style="width: 100%; height:  200px; object-fit: cover;">
+                  <p>Porte de La Chapelle Arena</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/j2gawyfdwsdxjmxjy0fy" alt="Stade Roland-Garros" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Stade Roland-Garros</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/lcbrslxdtvbjf1hlr4ak" alt="Saint-Quentin-en-Yvelines BMX Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Saint-Quentin-en-Yvelines BMX Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w1460/f_auto/primary/h95mr152jgubt6n4mlm5" alt="Saint-Quentin-en-Yvelines Velodrome" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Saint-Quentin-en-Yvelines Velodrome</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/hxy4xq7xymfyls2qo8jt" alt="South Paris Arena" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>South Paris Arena</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/vez7ghzwnsc5ijcy01rj" alt="Stade de France" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Stade de France</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/vyrautndtymumlewyf0x" alt="Teahupo'o, Tahiti" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Teahupo'o, Tahiti</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://media.cntraveler.com/photos/5a85c3c3b8ebbd42565cf888/16:9/w_2240,c_limit/Place-Trocadero_2018_GettyImages-521062958.jpg" alt="Trocadéro" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Trocadéro</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/ds4on9lqxe03vrl9urbx" alt="Vaires-sur-Marne Nautical Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Vaires-sur-Marne Nautical Stadium</p>
+                </div>
+                <div style="width: calc(33.33% - 20px); margin-bottom: 20px;">
+                  <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_west/t_s_w2440/f_auto/primary/tzvgxey7cbfreyala4wo" alt="Yves-du-Manoir Stadium" style="width: 100%; height: 200px; object-fit: cover;">
+                  <p>Yves-du-Manoir Stadium</p>
+                </div>
+            </div>
+        </div>
+        <div id="Medal Table" class="tabcontent">
+          <style>
+            table {
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0 10px;
+            }
+            tr {
+                background-color: #f5e1ad;
+                border: 1px solid;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                font-size: 22px;
+            }
+            td:first-child {
+                display: flex;
+                align-items: center;
+            }
+            td img {
+                margin-right: 10px;
+            }
+            td:last-child {
+                text-align: center;
+            }
+            .total {
+                font-weight: bold;
+            }
+            .medal-count {
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            .plus-btn {
+                border: 1px solid #000;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .plus-btn:hover {
+                background-color: #ddd;
+            }
+        </style>
+            <table>
+                <tbody>
+                    <tr align: left>
+                      <th>Order</th>
+                      <th>Flag</th>
+                      <th>Country</th>
+                      <th>Gold</th>
+                      <th>Silver</th>
+                      <th>Bronze</th>
+                      <th>Total</th>
+                    </tr>
+                      <tr>
+                          <td>1</td>
+                          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg/510px-Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg.png" alt="USA Flag" width="38px" height="20px"></td>
+                          <td>United States of America</td>
+                          <td>40</td>
+                          <td>44</td>
+                          <td>42</td>
+                          <td>126</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1200px-Flag_of_the_People%27s_Republic_of_China.svg.png" alt="People's Republic of China Flag" width="30px" height="20px"></td>
+                          <td>People's Republic of China</td>
+                          <td>40</td>
+                          <td>27</td>
+                          <td>24</td>
+                          <td>91</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><img src = "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt = "Japan Flag" widtth= "20px" height= "30px">
+                          <td>Japan</td>
+                          <td>20</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>45</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td><img src = "https://www.bing.com/th?id=OIP.bj0R8HauyzivL52fFNhaxQHaDt&w=178&h=100&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt = "Australia" width = "40px" height = "20px"></td>
+                          <td>Australia</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td>16</td>
+                          <td>53</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td><img src = "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg" alt = "France" width = "30px" height = "20px"></td>
+                          <td>France</td>
+                          <td>16</td>
+                          <td>26</td>
+                          <td>22</td>
+                          <td>64</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt = "Netherlands"  width = "30px" height = "20px"></td>
+                          <td>Netherlands</td>
+                          <td>15</td>
+                          <td>7</td>
+                          <td>12</td>
+                          <td>34</td>
+                        </tr>
+             
+                          <td>7</td>
+                          <td><img src = "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg" alt = "Great Britain" width = "30px" height = "15px"></td>
+                          <td>Great Britain</td>
+                          <td>14</td>
+                          <td>22</td>
+                          <td>29</td>  
+                          <td>65</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/KOR.png" alt = "South Korea"   width = "30px" height = "20px"></td>
+                          <td>Republic of Korea</td>
+                          <td>13</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>32</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ITA.png" alt = "Italy"  width="30px" height = "20px"></td>
+                          <td>Italy</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>15</td>
+                          <td>40</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/GER.png" alt = "Germany" width = "30px" height = "20px"></td>
+                          <td>Germany</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>8</td>
+                          <td>33</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td><img src = "https://media.istockphoto.com/id/174177539/photo/new-zealand-flag.jpg?s=612x612&w=0&k=20&c=SOzXXdGLIJTAnCFdgMk09YFQMz-GVY9gLLSISO_PJN8=" alt = "Newzealand" width = "30px" height = "20px"></td>
+                          <td>New Zealand</td>
+                          <td>10</td>
+                          <td>7</td>
+                          <td>3</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt = "Canada" width = "30px" height = "20px"></td>
+                         <td>Canada</td>
+                          <td>9</td>
+                          <td>7</td>
+                          <td>11</td>
+                          <td>27</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td><img src = "https://aaflags.co.uk/wp-content/uploads/2020/11/Uzbekistan-Flag.jpg" alt = "uzbekistan" width = "30px"  height = "20px"></td>
+                          <td>Uzbekistan</td>
+                          <td>8</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>13</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td><img src = "https://th.bing.com/th/id/OIP.ec03Sn1-Lj9pgUEXuhgOiwHaFP?rs=1&pid=ImgDetMain" alt = "Hungary" width = "30px" height = "20px"></td>
+                          <td>Hungary</td>
+                          <td>6</td>
+                          <td>7</td>
+                          <td>6</td>
+                          <td>19</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td><img src = "https://static.vecteezy.com/system/resources/previews/016/314/510/original/spain-flag-free-png.png" alt = "spain" width = "40px" height = "30px"></td>
+                          <td>Spain</td>
+                          <td>5</td>
+                          <td>4</td>
+                          <td>9</td>
+                          <td>18</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td><img src = "https://flagsweb.com/images/PNG/Flag_of_Sweden.png" alt = "Sweden" width = "30px" height = "20px"></td>
+                          <td>Sweden</td>
+                          <td>4</td>
+                          <td>4</td>
+                          <td>3</td>
+                          <td>11</td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td><img src = "https://th.bing.com/th/id/OIP.Ka3at-hJbapjet-Ty80KjQHaE9?w=264&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" alt = "Kenya" width = "30px" height = "20px"></td>
+                          <td>Kenya</td>
+                          <td>4</td>
+                          <td>2</td>
+                          <td>5</td>
+                          <td>11</td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td><img src = "https://cdn.britannica.com/01/3101-050-1BB27B69/Flag-Norway.jpg" alt = "Norway" width = "30px" height = "20px"></td>
+                          <td>Norway</td>
+                          <td>4</td>
+                          <td>1</td>
+                          <td>3</td>  
+                          <td>8</td>  
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td><img src = "https://cdn.britannica.com/33/1733-004-5BA407D6/FLAG-Ireland.jpg" alt = "Ireland" width = "30px" height = "20px"></td>
+                          <td>Ireland</td>
+                          <td>4</td>
+                          <td>0</td>
+                          <td>3</td>  
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>20</td>
+                          <td><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" alt = "Brazil" width = "30px" height = "20px"></td>
+                          <td>Brazil</td>
+                          <td>3</td>
+                          <td>7</td>
+                          <td>10</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td>21</td>
+                          <td><img src = "https://cdn.britannica.com/22/1722-050-B489CA11/Flag-Iran.jpg" alt = "Iran" width = "30px" height = "20px"></td>
+                          <td> Islamic Republic of Iran</td>
+                          <td>3</td>
+                          <td>6</td>
+                          <td>3</td>
+                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <td>22</td>
+                          <td><img src = "https://flagmakers.co.uk/media/t5dbmcrv/flag_of_ukraine.png?anchor=center&mode=crop&width=1530&height=0&rnd=132906154057230000" alt = "Ukraine" width = "30px" height = "20px"></td>
+                          <td>Ukraine</td>
+                          <td>3</td>
+                          <td>5</td>
+                          <td>4</td>
+                          <td>12</td>
+                        </tr>             
+                        <tr>
+                          <td>23</td>
+                          <td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/125px-Flag_of_Romania.svg.png" alt = "Romania " width = "30px" height = "20px"> </td>
+                          <td>Romania</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>2</td>
+                          <td>9</td>
+                        </tr>
+                        <tr>
+                          <td>24</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/GEO.png" alt = "Georgia" width = "30px" height = "20px"> </td>
+                          <td>Georgia</td>
+                          <td>3</td>
+                          <td>3</td>
+                          <td>1</td>
+                          <Td>7</Td>
+                        </tr>
+                        <tr>
+                          <td>25</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BEL.png" alt = "belgium" width = "30px" height = "20px"> </td>
+                          <td>Belgium</td>
+                          <td>3</td>
+                          <td>1</td>
+                          <td>6</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>26</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BUL.png" alt = "Bulgaria" width = "30px" height = "20px"> </td>
+                          <td>Bulgaria</td>
+                          <td>3</td>  
+                          <td>1</td>
+                          <td>3</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>27</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/SRB.png" alt = "Serbia" width = "30px" height = "20px"></td>
+                          <td>Serbia</td>
+                          <td>3</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>28</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CZE.png" alt = "Czechia" width = "30px" height = "20px"></td>
+                          <td>Czechia</td>
+                          <td>3</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>29</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/DEN.png" alt = "Denmark" width = "30px" height = "20px"></td>
+                          <td>Denmark</td>
+                          <td>2</td>
+                          <Td>2</Td>
+                          <Td>5</Td>
+                          <td>9</td>
+                        </tr>
+                        <tr>
+                          <td>30</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/AZE.png" alt = "Azerbaijan" width = "30px" height = "20px"></td>
+                          <td>Azerbaijan</td>
+                          <td>2</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>31</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CRO.png" alt = "Croatia" width = "30px" height = "20px"></td>
+                          <td>Croatia</td>
+                          <td>2</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>32</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CUB.png" alt = "Cuba" width = "30px" height = "20px"></td>
+                          <td>Cuba</td>
+                          <td>2</td>
+                          <td>1</td>
+                          <td>6</td>
+                          <td>9</td>
+                        </tr>
+                        <tr>
+                          <td>33</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRN.png" alt = "Bahrain" width = "30px" height = "20px"></td>
+                          <td>Bahrain</td>
+                          <td>2</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>34</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/SLO.png" alt = "Slovenia" width = "30px" height = "20px"></td>
+                          <td>Slovenia</td>
+                          <td>2</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td>35</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/TPE.png" alt = "Chinese Taipei" width = "30px" height = "20px"></td>
+                          <td>Chinese Taipei</td>
+                          <td>2</td>
+                          <td>0</td>
+                          <td>5</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>36</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/AUT.png" alt = "Austria" width = "30px" height = "20px"></td>
+                          <td>Austria</td>
+                          <td>2</td>
+                          <Td>0</Td>
+                          <td>3</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>37</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/HKG.png" alt = "Hong-Kong" width = "30px" height = "20px"> </td>
+                          <td>Hong Kong</td>
+                          <td>2</td>
+                          <td>0</td>
+                          <Td>2</Td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>38</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/PHI.png" alt = "Philippines" width = "30px" height = "20px"></td>
+                          <td>Philippines</td>
+                          <td>2</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>39</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ALG.png" alt = "Algeria" width = "30px" height = "20px"></td>
+                          <td>Algeria</td>
+                          <td>2</td>
+                          <Td>0</Td>
+                          <Td>1</Td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td>40</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/INA.png" alt = "Indonesia" width = "30px" height = "20px"></td>
+                          <Td>Indonesia</Td>
+                          <td>2</td>
+                          <Td>0</Td>
+                          <td>1</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td>41</td>
+                          <Td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ISR.png" alt = "Israel" width = "30px" height = "20px"></Td>
+                          <td>Israel</td>
+                          <td>1</td>
+                          <td>5</td>
+                          <td>1</td>
+                          <td>7</td>
+                        </tr>
+                       <tr>
+                        <td>42</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/POL.png" alt = "Poland" width = "30px" height = "20px"></td>
+                        <td>Poland</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>10</td>
+                       </tr>
+                       <tr>
+                        <td>43</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/KAZ.png" alt = "Kazakhastan" width = "30px" height = "20px"></td>
+                        <td>Kazakhastan</td>
+                        <td>1</td>
+                        <Td>3</Td>
+                        <td>3</td>
+                        <Td>7</Td>
+                       </tr>  
+                       <tr>
+                        <td>44</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/JAM.png" alt = "Jamaica" width = "30px" height = "20px"></td>
+                        <td>Jamaica</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                      </tr>    
+                      <tr>
+                        <td>45</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/RSA.png" alt = "South Africa" width = "30px" height = "20px"></td>
+                        <td>South Africa</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <Td>6</Td>
+                      </tr>
+                      <tr>
+                        <td>46</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/THA.png" alt = "Thailand" width = "30px" height = "20px"></td>
+                        <td>Thailand</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <Td>6</Td>
+                      </tr>
+                      <tr>
+                        <td>47</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ETH.png" alt = "  Ethopia" width = "30px" height = "20px"></td>
+                        <td>Ethiopia</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td>48</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/SUI.png" alt = "Switzerland" width = "30px" height = "20px"></td>
+                        <td>Switzerland</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <td>49</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ECU.png" alt = "Ecuador" width = "30px" height = "20px"></td>
+                        <td>Ecuador</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/POR.png" alt = "Portugal" width = "30px" height = "20px"></td>
+                        <td>Portugal</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td>51</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/GRE.png" alt = "Greece" width = "30px" height = "20px"></td>
+                        <td>Greece</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <td>52</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ARG.png" alt = "Argentina" width = "30px" height = "20px"></td>
+                        <td>Argentina</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>53</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/EGY.png" alt = "Egypt" width = "30px" height = "20px"></td>
+                        <td>Egypt</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>54</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/TUN.png" alt = "Tunisia" width = "30px" height = "20px"></td>
+                        <td>Tunisia</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>55</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BOT.png" alt = "Botswanna" width = "30px" height = "20px"></td>
+                        <td>Botswana</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>56</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CHI.png" alt = "Chile" width = "30px" height = "20px"></td>
+                        <td>Chile</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>57</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/LCA.png" alt = "Saint Lucia" width = "30px" height = "20px"></td>
+                        <Td>Saint Lucia</Td>
+                        <td>1</td>
+                        <Td>1</Td>
+                        <td>0</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>58</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/UGA.png" alt = "Uganda" width = "30px" height = "20px"></td>
+                        <td>Uganda</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <Td>2</Td>
+                      </tr>
+                      <Tr>
+                        <td>59</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/DOM.png" alt = "Domanion Republic" width = "30px" height = "20px"></td>
+                        <td>Dominican Republic</td>
+                        <td>1</td>
+                        <Td>0</Td>
+                        <Td>2</Td>
+                        <td>3</td>
+                      </Tr>
+                      <tr>
+                        <td>60</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/GUA.png" alt = "Guatemela" width = "30px" height = "20px"></td>
+                        <td>Guatemela</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>61</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/MAR.png" alt = "Morocco" width = "30px" height = "20px"></td>
+                        <td>Morroco</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>62</td>
+                        <Td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/DMA.png" alt = "Dominica" width = "30px" height = "20px"></Td>
+                        <td>Dominica</td>
+                        <td>1</td>
+                        <Td>0</Td>
+                        <td>0</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>63</td>
+                        <Td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/PAK.png" alt = "Pakistan" width = "30px" height = "20px"></Td>  
+                        <td>Pakistan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>64</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/TUR.png" alt = "Turkey" width = "30px" height = "20px"></td>
+                        <td>Turkey</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                         <td>65</td>
+                         <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/MEX.png" alt = "Mexico" width = "30px" height = "20px"></td>
+                         <td>Mexico</td>
+                         <td>0</td>
+                         <td>3</td>
+                         <td>2</td>
+                         <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>66</td>
+                        <Td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ARM.png" alt = "Armenia" width = "30px" height = "20px"></Td>
+                        <td>Armenia</td>
+                        <td>0</td>
+                        <Td>3</Td>
+                        <td>1</td>
+                        <Td>4</Td>
+                      </tr>
+                      <tr>
+                        <td>67</td>
+                        <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/COL.png" alt = "Columbia" width = "30px" height = "20px"></td>
+                        <Td>Colombia</Td>
+                        <td>0</td>
+                        <td>3</td>
+                        <TD>1</TD>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                          <td>68</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/KGZ.png" alt = "Kyrgystan" width = "30px" height = "20px"></td>
+                          <Td>Kyrgystan</Td>
+                          <td>0</td>
+                          <td>2</td>  
+                          <Td>4</Td>
+                          <td>6</td>
+                      </tr>
+                      <tr>
+                          <td>69</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/PRK.png" alt = "Democratic People's Republic of Korea" width = "30px" height = "20px"></td>
+                          <td>Democratic People's Republic of Korea</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>4</td>
+                          <td>6</td>
+                      </tr>
+                      <tr>
+                          <Td>70</Td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/LTU.png" alt = "Lithuana" width = "30px" height = "20px"></td>
+                          <td>Lithuana</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <Td>4</Td>
+                          <td>6</td>
+                      </tr>
+                      <Tr>
+                          <td>71</td>
+                          <Td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/IND.png" alt = "India" width = "30px" height = "20px"></Td>
+                          <Td>India</Td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>5</td>
+                          <td>6</td>
+                      </Tr>
+                      <tr>
+                          <td>72</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/MDA.png" alt = "Republic of Moldova" width = "30px" height = "20px"></td>
+                          <td>Republic of Moldova</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>3</td>
+                          <td>4</td>
+                      </tr>
+                      <tr>
+                          <td>73</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/KOS.png" alt = "Kosovo" width = "30px" height = "20px"></td>
+                          <td>Kosovo</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                          <td>74</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CYP.png" alt = "Cyprus" width = "30px" height = "20px"></td>
+                          <td>Cyprus</td>
+                          <Td>0</Td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>75</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/FIJ.png" alt = "Fiji" width = "30px" height = "20px"></td>
+                          <td>Fiji</td>
+                          <Td>0</Td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>76</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/JOR.png" alt = "Jordan" width = "30px" height = "20px"></td>
+                          <td>Jordan</td>
+                          <Td>0</Td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>77</td>
+                          <Td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/MGL.png" alt="Mongolia" width="30 px" height="20 px"></td>
+                          <td>Mongolia</td>
+                          <Td>0</Td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>79</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/PAN.png" alt = "Panama" width = "30px" height = "20px"></td>
+                          <td>Panama</td>
+                          <Td>0</Td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>1</td>
+                      </tr>
+                      <Tr>
+                          <td>80</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/TJK.png" alt = "Tajikistan" width = "30px" height = "20px"></td>
+                          <td>Tajikistan</td>
+                          <td>0</td>
+                          <Td>0</Td>
+                          <td>3</td>
+                          <td>3</td>
+                      </Tr>
+                      <Tr>
+                          <td>81</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ALB.png" alt = "Albania" width = "30px" height = "20px"></td>
+                          <td>Albania</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>2</td>
+                      </Tr>
+                      <tr>
+                          <td>82</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/GRN.png" alt = "Grenada" width = "30px" height = "20px"></td>
+                          <td>Grenada</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                          <td>83</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/MAS.png" alt = "Malaysia" width = "30px" height = "20px"></td>
+                          <td>Malaysia</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                          <td>84</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/PUR.png" alt = "Puerto Rico" width = "30px" height = "20px"></td>
+                          <td>Puerto Rico</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>2</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                          <td>85</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CIV.png" alt = "Cote d'lvoire" width = "30px" height = "20px"></td>
+                          <Td>Cote d'lvoire</Td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                      </tr>
+                      <tr>
+                          <td>86</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CPV.png" alt = "Cabo Verde" width = "30px" height = "20px"></td>
+                          <td>Cabo Verde</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                      </tr>
+                      <Tr>
+                          <td>87</td>
+                          <Td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/EOR.png" alt = "Refugee Olympic Team" width = "30px" height = "20px"></Td>
+                          <Td>Refugee Olympic Team</Td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>    
+                          <td>1</td>
+                      </Tr>
+                      <Tr>
+                          <td>88</td>
+                          <Td><img src = "https://cdn.britannica.com/48/3448-050-1EFC8CF3/Flag-Peru.jpg" alt = "Peru" width = "30px" height = "20px"></td>
+                          <Td>Peru</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                      </Tr>
+                      <tr>
+                          <td>89</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/QAT.png" alt = "Qatar" width = "30px" height = "20px"></td>
+                          <td>Qatar</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                         
+                      </tr>
+                      <tr>
+                          <td>90</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/SGP.png" alt = "Singapore" width = "30px" height = "20px"></td>
+                          <td>Singapore</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                      </tr>
+                      <Tr>
+                          <td>91</td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/SVK.png" alt = "Sloviaka" width = "30px" height = "20px"></td>
+                          <td>Slovakia</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                      </Tr>
+                      <tr>
+                          <Td>92</Td>
+                          <td><img src = "https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/ZAM.png" alt = "Zambia" width = "30px" height = "20px"></td>
+                          <td>Zambia</td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>1</td>
+                          <td>1</td>
+                      </tr>
+                  </tbody> 
+            </table>                
+        </div>  
+        <div id="Games" class="tabcontent">
+          <div style="display: flex; justify-content: flex-start; padding: 20px; height: 600px;">
+            <div style="background-color: white; border: 5px solid gray; border-radius: 2%; width: 400px; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px;">
+              <img src="A basketball game.png" alt="Description" style="width: 350px; height: 350px; object-fit: cover; border-radius: 0;">
+                 <a href="https://www.cbc.ca/kids/games/play/swipe-basketball"><h2 style="font-size: 20px; margin-top: 10px;">Basketball Game</h2></a> 
+                </div>
+                <div style="background-color: white; border: 5px solid gray; border-radius: 2%; width: 400px; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px;">
+                  <img src="quiz.avif" alt="quiz"style="width: 350px; height: 350px; object-fit: cover; border-radius: 0;">                  
+                  <a href="Quiz.html"><h2 style="font-size: 20px; margin-top: 10px;">Quiz</h2></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+          <div style="text-align: center; padding: 20px; background-color: #d3d3d5; border-top: 1px solid #ccc;">
+              <p>
+                  Names: Shivanand and Dharmik<br>
+                  School: Pragathi Central School<br>
+                  Email: <a href="shivalovesmaths@gmail.com">shivalovesmaths@gmail.com</a><br>
+                  &copy; 2024 All Rights Reserved. | Designed By: Team Infinity Innovators
+              </p>
+          </div>
+      </footer>
+    </body>           
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            document.getElementById("defaultOpen").click();
+        </script>
+       
+        <script>
+          window.embeddedChatbotConfig = {
+          chatbotId: "EVrv04xD1yJff479yrWMm",
+          domain: "www.chatbase.co"
+          }
+          </script>
+          <script
+          src="https://www.chatbase.co/embed.min.js"
+          chatbotId="EVrv04xD1yJff479yrWMm"
+          domain="www.chatbase.co"
+          defer>
+          </script>
+    </body>
+</html>
+

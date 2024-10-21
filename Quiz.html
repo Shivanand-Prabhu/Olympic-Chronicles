@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .options {
+      margin-bottom: 20px;
+    }
+
+    .option {
+      display: block;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background-color: #f0f0f0;
+    }
+
+    .option.selected {
+      background-color: #d1e7dd;
+      border-color: #badbcc;
+    }
+
+    .result {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .button {
+      display: block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>HTML Quiz</h1>
+
+  <div class="question"></div>
+
+  <div class="options"></div>
+
+  <div class="result hidden"></div>
+
+  <button class="button" id="nextButton">Next ></button>
+</div>
+
+<script>
+  const quizData = [
+    {
+        question: "When is Olympics Held?",
+        options: ["Every year", "Every 4 Years", "None of these"],
+        correct: 1
+    },
+    {
+        question: "Where was the 2024 Olympics held?",
+        options: ["Paris", "California", "Amsterdam"],
+        correct: 0
+    },
+    {
+        question: "Which of the following was a new sport added to Paris 2024?",
+        options: ["Breakdancing", "Basketball", "Artistic Swimming"],
+        correct: 0
+    },
+    {
+        question: "Which country got the most number of medals?",
+        options: ["People's Republic of China", "Ireland", "United States of America"],
+        correct: 2
+    },
+    {
+        question: "By how much percent was emissions decreased in Olympics 2024?",
+        options: ["20%", "0%", "50%"],
+        correct: 2
+    }
+];
+
+  let currentQuestionIndex = 0;
+  let selectedOptionIndex = -1;
+
+  const questionElement = document.querySelector('.question');
+  const optionsElement = document.querySelector('.options');
+  const resultElement = document.querySelector('.result');
+  const nextButton = document.getElementById('nextButton');
+
+  function loadQuestion() {
+    const currentQuestion = quizData[currentQuestionIndex];
+    questionElement.textContent = `Question ${currentQuestionIndex + 1}: ${currentQuestion.question}`;
+    optionsElement.innerHTML = '';
+    currentQuestion.options.forEach((option, index) => {
+      const optionElement = document.createElement('div');
+      optionElement.textContent = option;
+      optionElement.classList.add('option');
+      optionElement.addEventListener('click', () => selectOption(index));
+      optionsElement.appendChild(optionElement);
+    });
+    resultElement.classList.add('hidden');
+    selectedOptionIndex = -1;
+  }
+
+  function selectOption(index) {
+    selectedOptionIndex = index;
+    document.querySelectorAll('.option').forEach((option, i) => {
+      option.classList.toggle('selected', i === index);
+    });
+  }
+
+  function checkAnswer() {
+    if (selectedOptionIndex === -1) {
+      resultElement.textContent = "Please select an option!";
+      resultElement.classList.remove('hidden');
+      return;
+    }
+    
+    const correctIndex = quizData[currentQuestionIndex].correct;
+    if (selectedOptionIndex === correctIndex) {
+      resultElement.textContent = "Correct!";
+      resultElement.style.color = "green";
+    } else {
+      resultElement.textContent = "Incorrect!";
+      resultElement.style.color = "red";
+    }
+    resultElement.classList.remove('hidden');
+  }
+
+  nextButton.addEventListener('click', () => {
+    checkAnswer();
+    if (selectedOptionIndex !== -1) {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < quizData.length) {
+        setTimeout(loadQuestion, 1000);
+      } else {
+        questionElement.textContent = "Quiz Complete!";
+        optionsElement.innerHTML = '';
+        nextButton.classList.add('hidden');
+      }
+    }
+  });
+
+  loadQuestion();
+</script>
+
+</body>
+</html>
